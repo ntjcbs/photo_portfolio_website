@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>N8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css_files/style.css">
+    <link rel="stylesheet" href="./css_files/css">
+    <link rel="stylesheet" href="./css_files/font-awesome.min.css">
+    <style>
+    body,
+    h1 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    img {
+        margin-bottom: -7px
+    }
+
+    .row-padding img {
+        margin-bottom: 12px
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar black animate-top xxlarge" style="display: none; padding-top: 150px; width: 100%;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="sidebar_close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+        <div class="bar-block center">
+            <a href="https://www.google.com" class="bar-item button text-grey hover-black">About</a>
+            <a href="https://www.google.com" class="bar-item button text-grey hover-black">Photos</a>
+            <a href="https://www.google.com" class="bar-item button text-grey hover-black">Follow</a>
+            <a href="https://www.google.com" class="bar-item button text-grey hover-black">Contact</a>
+        </div>
+    </nav>
+    <div class="content" style="max-width:1500px">
+        <!-- Header -->
+        <div class="opacity">
+            <span class="button xxlarge white right" onclick="sidebar_open()"><i class="fa fa-bars"></i></span>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="content" style="max-width:1500px">
+        <div class="opacity">
+            <header class="center margin-bottom">
+                <h1><b>PHOTOGRAPHS</b></h1>
+                <p><b>Some photos I took</b></p>
+            </header>
+        </div>
+        
+
+        
+        <!-- End Page Content -->
+    </div>
+    <!-- Footer -->
+    <footer class="container padding-64 light-grey center opacity xlarge" style="margin-top:128px">
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-snapchat hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-twitter hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+        <p class="medium">Powered by Nate</a></p>
+    </footer>
+    <script>
+    // Open and close sidebar
+    function sidebar_open() {
+        document.getElementById("mySidebar").style.width = "100%";
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function sidebar_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+    <div class="exifviewerui-template-lite" id="exifviewerui-template-lite-for--1879126976" style="top: 272px; left: 270.328px; max-width: 447px; display: none; opacity: 0;">EXIF not found<a href="javascript:void(0);" title="Close" class="exifviewerui-close-link">Close</a></div>
+    <div class="exifviewerui-template-lite" id="exifviewerui-template-lite-for--1155098272" style="top: 2004.27px; left: 455.328px; max-width: 447px; display: none; opacity: 0;">EXIF not found<a href="javascript:void(0);" title="Close" class="exifviewerui-close-link">Close</a></div>
+</body>
+
+</html>
