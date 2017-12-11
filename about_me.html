@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css_files/style.css">
     <link rel="stylesheet" href="./css_files/css">
     <link rel="stylesheet" href="./css_files/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <style>
     body,
     h1 {
@@ -25,26 +27,17 @@
 </head>
 
 <body>
-    <!-- Sidebar -->
-    <nav class="sidebar black animate-top xxlarge" style="display: none; padding-top: 150px; width: 100%;" id="mySidebar">
-        <a href="javascript:void(0)" onclick="sidebar_close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
-  </a>
-        <div class="bar-block center">
-            <a href="https://www.google.com" class="bar-item button text-grey hover-black">About</a>
-            <a href="https://www.google.com" class="bar-item button text-grey hover-black">Photos</a>
-            <a href="https://www.google.com" class="bar-item button text-grey hover-black">Follow</a>
-            <a href="https://www.google.com" class="bar-item button text-grey hover-black">Contact</a>
-        </div>
-    </nav>
-    <div class="content" style="max-width:1500px">
-        <!-- Header -->
-        <div class="opacity">
-            <span class="button xxlarge white right" onclick="sidebar_open()"><i class="fa fa-bars"></i></span>
-            <div class="clear"></div>
-        </div>
+    <!-- Header -->
+    <div id="header">
+        <!-- jquery loads header and footer-->       
     </div>
-
+    <script>
+        jQuery(document).ready(function($){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    
     <!-- !PAGE CONTENT! -->
     <div class="content" style="max-width:1500px">
         <div class="opacity">
