@@ -1,0 +1,19 @@
+/* Playing with CSS again Nate Jacobs 2017 */
+
+
+.photo:hover {
+     opacity: 0.8;         
+}
+
+img.mdsol-link {
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.mdsol:hover {
+    opacity: 0.1;         
+}
+
+.opaque_text {
+    color: rgba(0, 0, 0, 0.6)
+}
