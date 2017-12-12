@@ -9,71 +9,55 @@
     <link rel="stylesheet" href="./css_files/css">
     <link rel="stylesheet" href="./css_files/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <style>
-    body,
-    h1 {
-        font-family: "Montserrat", sans-serif
-    }
+        body,
+        h1 {
+            font-family: "Montserrat", sans-serif
+        }
 
-    img {
-        margin-bottom: -7px
-    }
+        img {
+            margin-bottom: -7px
+        }
 
-    .row-padding img {
-        margin-bottom: 12px
-    }
+        .row-padding img {
+            margin-bottom: 12px
+        }
     </style>
 </head>
 
 <body>
     <!-- Header -->
     <div id="header">
-        <!-- jquery loads header and footer-->       
+        <!-- jquery loads header and footer-->
     </div>
-    <script>
-        jQuery(document).ready(function($){
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
-    
+
     <!-- !PAGE CONTENT! -->
     <div class="content" style="max-width:1500px">
         <div class="opacity">
             <header class="center margin-bottom">
-                <h1><b>PHOTOGRAPHS</b></h1>
-                <p><b>Some photos I took</b></p>
+                <h1>
+                    <b>PHOTOGRAPHS</b>
+                </h1>
+                <p>
+                    <b>Some photos I took</b>
+                </p>
             </header>
         </div>
-        
 
-        
-        <!-- End Page Content -->
+    </div>
+    <!-- End Page Content -->
     </div>
     <!-- Footer -->
-    <footer class="container padding-64 light-grey center opacity xlarge" style="margin-top:128px">
-        <i class="fa fa-facebook-official hover-opacity"></i>
-        <i class="fa fa-instagram hover-opacity"></i>
-        <i class="fa fa-snapchat hover-opacity"></i>
-        <i class="fa fa-pinterest-p hover-opacity"></i>
-        <i class="fa fa-twitter hover-opacity"></i>
-        <i class="fa fa-linkedin hover-opacity"></i>
-        <p class="medium">Powered by Nate</a></p>
-    </footer>
+    <div id="footer">
+        <!-- jquery loads header and footer-->
+    </div>
     <script>
-    // Open and close sidebar
-    function sidebar_open() {
-        document.getElementById("mySidebar").style.width = "100%";
-        document.getElementById("mySidebar").style.display = "block";
-    }
-
-    function sidebar_close() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
+        jQuery(document).ready(function ($) {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
     </script>
-    <div class="exifviewerui-template-lite" id="exifviewerui-template-lite-for--1879126976" style="top: 272px; left: 270.328px; max-width: 447px; display: none; opacity: 0;">EXIF not found<a href="javascript:void(0);" title="Close" class="exifviewerui-close-link">Close</a></div>
-    <div class="exifviewerui-template-lite" id="exifviewerui-template-lite-for--1155098272" style="top: 2004.27px; left: 455.328px; max-width: 447px; display: none; opacity: 0;">EXIF not found<a href="javascript:void(0);" title="Close" class="exifviewerui-close-link">Close</a></div>
 </body>
 
 </html>
