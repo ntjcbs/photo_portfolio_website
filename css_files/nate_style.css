@@ -40,6 +40,7 @@ img.mdsol-link {
     transition: .5s ease;
     background-color: rgb(29, 29, 29);
     border-radius: 5px;    
+    pointer-events: none;    
 }
 
 .div-photo {
@@ -59,3 +60,34 @@ img.mdsol-link {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+
+  /* lightbox !!! */
+  #lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background: rgba(0,0,0,.7);
+    text-align:center;
+}
+
+#lightbox p {
+    text-align:right; 
+    color:#fff; 
+    margin-right:20px; 
+    font-size:12px; 
+}
+
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:940px;
+}
+
+
+.nate-logo{
+    color: #000!important;
+    background-color: rgba(0, 0, 0, 0.719)!important
+}
