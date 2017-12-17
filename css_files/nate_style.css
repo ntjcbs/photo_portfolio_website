@@ -6,11 +6,11 @@
 }
 */
 
-.photo {
+.img-photo {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    
+    display: block;
 }
 
 img.mdsol-link {
@@ -22,10 +22,44 @@ img.mdsol-link {
     opacity: 0.1;         
 }
 
+
 .opaque_text {
     color: rgba(0, 0, 0, 0.6)
 }
 
+.content {
+    max-width: 980px;
+    margin: auto;   
+    transition: background 1s ease;
+    
+}
+.dark-background {
+    background: rgba(0, 0, 0, 0.589);
+ }
+
+ .neon-text{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px 
+    #3e30ff , 0 0 70px #3e30ff , 0 0 80px #3e30ff , 0 0 100px #3e30ff ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    
+ }
+    
 /* Photo hoverover syling */
   
   .overlay {
@@ -45,6 +79,7 @@ img.mdsol-link {
 
 .div-photo {
     position: relative;
+
 }
   
   .div-photo:hover .overlay {
