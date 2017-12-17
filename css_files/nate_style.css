@@ -30,7 +30,7 @@ img.mdsol-link {
 .content {
     max-width: 980px;
     margin: auto;   
-    transition: background 1s ease;
+    transition: background .75s ease;
     
 }
 .dark-background {
@@ -44,7 +44,7 @@ img.mdsol-link {
     box-sizing: border-box;
     padding: 10px;
     border: none;
-    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+    font: normal 64px/normal "Warnes", Helvetica, sans-serif;
     color: rgba(255,255,255,1);
     text-decoration: normal;
     text-align: center;
