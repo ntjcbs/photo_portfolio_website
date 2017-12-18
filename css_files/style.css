@@ -736,14 +736,6 @@ a {
     border-width: 5px; 
 }
 
-.photo {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    z-index: 0;
-    
-}
-
 @media (min-width:993px) {
     .col.l1 {
         width: 8.33333%
@@ -781,11 +773,6 @@ a {
     .col.l12 {
         width: 99.99999%
     }
-}
-
-.content {
-    max-width: 980px;
-    margin: auto
 }
 
 .rest {

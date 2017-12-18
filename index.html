@@ -262,7 +262,7 @@
     <script>
         jQuery(document).ready(function ($) {
             $("#header").load("header.html");
-            $("#footer").load("footer-dark.html");
+            $("#footer").load("footer.html");
         });
     </script>
 
@@ -276,20 +276,23 @@
                 var lightbox =
                     '<div id="lightbox">' +
                     '<p>Click to close</p>' +
-                    '<div id="content">' + //insert clicked link's href into img src
-                    '<img class='img-photo' src="' + image_href + '" />' +
-                        '</div>' +
-                        '</div>';
+                    '<div class="lightbox-content" >' + //insert clicked link's href into img src
+                    '<img src="' + image_href + '" />' +
+                    '</div>' +
+                    '</div>';
 
                 //insert lightbox HTML into page
                 $('body').append(lightbox);
             });
+        });
+    </script>
 
-            $('#lightbox').on('click', function () {
-                console.log("hide");
+    <script> 
+        $(document).on("click", "#lightbox", function () {
 
-                $('#lightbox').hide();
-            });
+            console.log("hide");
+
+            $('#lightbox').remove();
         });
     </script>
 

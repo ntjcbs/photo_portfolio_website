@@ -6,48 +6,31 @@
     <div class="bar-block center">
         <a href="/about_me.html" class="bar-item button text-grey hover-black">About</a>
         <a href="/photos.html" class="bar-item button text-grey hover-black">Photos</a>
-        <a href="https://www.google.com" class="bar-item button text-grey hover-black">Follow</a>
         <a href="https://www.google.com" class="bar-item button text-grey hover-black">Contact</a>
+        <a href="https://www.google.com" class="bar-item button text-grey hover-black">Blog</a>
     </div>
 </nav>
-<style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-        
-        li {
-            float: left;
-        }
-        
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        
-        li a:hover {
-            background-color: #111;
-        }
-        </style>
 <div class="content" style="max-width:1500px">
     <!-- Header -->
-    <div class="light-grey">
-        <span class="button left nate-logo" onclick="sidebar_open()">
-                <img src="/assets/N8.svg" height="50px">
+    <div class="container padding-16 dark-grey center opacity xlarge">
+        <span class="button left " onclick="sidebar_open()">
+            <img src="/assets/N8.svg" height="50px" class=nate-logo>
         </span>
-        <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-              </ul>
-        
+        <ul class="dark-grey">
+            <li>
+                <a href="/index">About</a>
+            </li>
+            <li>
+                <a href="/photos">Photos</a>
+            </li>
+            <li>
+                <a href="/contact">Contact</a>
+            </li>
+            <li>
+                <a href="/blog">Blog</a>
+            </li>
+        </ul>
+
         <div class="clear"></div>
 
     </div>
