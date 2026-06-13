@@ -1,326 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111373912-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photography — Nate Jacobs</title>
+  <meta name="description" content="A selection of photographs by Nate Jacobs — landscape, travel, animals, and neon.">
 
-  gtag('config', 'UA-111373912-1');
-</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="./css_files/main.css">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>N8</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css_files/nate_style.css">
-    <link rel="stylesheet" href="./css_files/style.css">
-    <link rel="stylesheet" href="./css_files/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./assets/jquery.inview.min.js"></script>
-    <link async href="http://fonts.googleapis.com/css?family=Warnes" rel="stylesheet" type="text/css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111373912-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-111373912-1');
+  </script>
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header">
-        <!-- jquery loads header and footer-->
+  <div class="bg-canvas" aria-hidden="true"></div>
+
+  <header class="wrap">
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="brand" href="./index.html"><span class="logo-badge">N8</span><span>Nate Jacobs</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./photos.html" class="active">Photos</a></li>
+          <li><a href="./art.html">Art</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow">Photography</span>
+        <h2>Frames from the city &amp; beyond</h2>
+        <p>A personal selection — click any photo to view it full size.</p>
+      </div>
+
+      <div class="gallery-title">
+        <h3>Landscape</h3>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo">
+          <img loading="lazy" alt="Above the Clouds" src="./assets/photos/web/above_the_clouds.jpg">
+          <figcaption>Above the Clouds</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Japanese Castle in Snowfall" src="./assets/photos/web/japan_castle_snowfall.jpg">
+          <figcaption>Japanese Castle in Snowfall</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="The Azores" src="./assets/photos/web/me_azores.jpg">
+          <figcaption>The Azores</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Broken Coconut" src="./assets/photos/web/broken_coconut.jpg">
+          <figcaption>Broken Coconut</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-title">
+        <h3>Travel &amp; Places</h3>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo">
+          <img loading="lazy" alt="Hieroglyphics" src="./assets/photos/web/hieroglyphics.jpg">
+          <figcaption>Hieroglyphics</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Mercedes-Benz Gullwing" src="./assets/photos/web/old_gullwing_mb.jpg">
+          <figcaption>Mercedes-Benz Gullwing</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Man Feeding Pigeons" src="./assets/photos/web/man_feeding_pigeons.jpg">
+          <figcaption>Man Feeding Pigeons</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-title">
+        <h3>Animals &amp; Wildlife</h3>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo">
+          <img loading="lazy" alt="King Penguin" src="./assets/photos/web/king_penguin.jpg">
+          <figcaption>King Penguin</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Penguin Underwater" src="./assets/photos/web/penguin_underwater.jpg">
+          <figcaption>Penguin Underwater</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Goat &amp; Swan" src="./assets/photos/web/goat_swan.jpg">
+          <figcaption>Goat &amp; Swan</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Wild Chicken" src="./assets/photos/web/wild_chicken.jpg">
+          <figcaption>Wild Chicken</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Me &amp; a Capybara" src="./assets/photos/web/me_capybara.jpg">
+          <figcaption>Me &amp; a Capybara</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Country House" src="https://drscdn.500px.org/photo/236786041/m%3D900/v2?user_id=4076748&webp=true&sig=33adfb8e28b62bd97b0591bd46089c255dd0405c834e870a9426b1c444d49d5e">
+          <figcaption>Country House</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Snowfall on 14th Street" src="https://drscdn.500px.org/photo/227677001/m%3D900/v2?user_id=4076748&webp=true&sig=7715f0335bb901742654d4d2725be4f57ab232a755559c10371fd4cf248adb79">
+          <figcaption>Snowfall on 14th Street</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Cat in Bowl" src="https://drscdn.500px.org/photo/238598947/m%3D900/v2?user_id=4076748&webp=true&sig=92bbb3421ddcdb705ebf7a147abacc13a2a271b37192e0c36030a7ec00616048">
+          <figcaption>Cat in Bowl</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Monster Spider" src="https://drscdn.500px.org/photo/238598945/m%3D900/v2?user_id=4076748&webp=true&sig=775ae686279ae6d2d789f878c66526293b89ecbbe2ca456b752f2559e3af767c">
+          <figcaption>Monster Spider (watch out)</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Bug" src="https://drscdn.500px.org/photo/238598955/m%3D900/v2?user_id=4076748&webp=true&sig=8c551a27e456ae6ae5cfa6caa024bbbe47adea8d45c5a3f535aca044316c511f">
+          <figcaption>Bug</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Stylish Cow" src="https://drscdn.500px.org/photo/238598953/m%3D900/v2?user_id=4076748&webp=true&sig=529e8985eb4e3eae4f08e849b0e959eee2bdc937425c973b2af043e33e0e5f4d">
+          <figcaption>Stylish Cow</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Ellis Island through the gap" src="https://drscdn.500px.org/photo/238598949/m%3D900/v2?user_id=4076748&webp=true&sig=7d14da3070c1575be3ec7b7235df2e4c46bf357fd110aa9b566a23a99bd44ee0">
+          <figcaption>Ellis Island Through the Gap</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="The sheep realized I wasn't a sheep" src="https://drscdn.500px.org/photo/238598957/m%3D900/v2?user_id=4076748&webp=true&sig=f36068c3961969de782a7fc0e442f831fc728e09f4d873fccba810108ffd0116">
+          <figcaption>The Sheep Realized I Wasn't a Sheep</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-title neon">
+        <h3>Neon</h3>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo">
+          <img loading="lazy" alt="Cigar Neon" src="https://drscdn.500px.org/photo/238598951/m%3D900/v2?user_id=4076748&webp=true&sig=99b7e3dbe8ca36aadb8a7c96ad3eb99dd4395b310022802cb5e252e5a95ff030">
+          <figcaption>Cigar Neon</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Neon Burger" src="https://drscdn.500px.org/photo/239363807/m%3D900/v2?user_id=4076748&webp=true&sig=b8eb30c7fba49c396ac86a91670bcab429d200f9b428d5f15240684a1b10c1d8">
+          <figcaption>Neon Burger</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Trees" src="https://drscdn.500px.org/photo/239363799/m%3D900/v2?user_id=4076748&webp=true&sig=6a734f69e6ef30bc30b1202a0a9bcb34d4f62c5a6a3a47f3afa5ffb9e287065b">
+          <figcaption>Trees</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Neon Fruit" src="https://drscdn.500px.org/photo/239363485/m%3D900/v2?user_id=4076748&webp=true&sig=6e540821f46d27951d7d39a0697f150016eaf3e76b65231d9945e7cb79983f43">
+          <figcaption>Neon Fruit</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Neon Pizza" src="https://drscdn.500px.org/photo/239363421/m%3D900/v2?user_id=4076748&webp=true&sig=cb23eaad9001423a5da907488ed8e582b5936a0a6af8d42993fc8ba91e5ae3dd">
+          <figcaption>Neon Pizza</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Neon Clock" src="https://drscdn.500px.org/photo/239432907/m%3D900/v2?user_id=4076748&webp=true&sig=f95a3e2a8b0f31ab4f2f00af62a0d4a0e6bebfebf55e06d6f8aa63eb3538d632">
+          <figcaption>Neon Clock</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Neon B-Side" src="https://drscdn.500px.org/photo/239352951/m%3D900/v2?user_id=4076748&webp=true&sig=c667245a5ec5297862d6994565c7dd2133e538ecafed42300917121db6e143b9">
+          <figcaption>Neon B-Side</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Neon" src="https://drscdn.500px.org/photo/239363281/m%3D900/v2?user_id=4076748&webp=true&sig=3987a51914a04a26b72b2d89a29a08bc1f6feefc0bedc632599b3cba1e7fe883">
+          <figcaption>Neon</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Neon Bat" src="https://drscdn.500px.org/photo/239432781/m%3D900/v2?user_id=4076748&webp=true&sig=cba824ee5e21e17feb7045dcb2dfb372583e5b3749687e089dee47167e4326af">
+          <figcaption>Neon Bat</figcaption>
+        </figure>
+        <figure class="photo">
+          <img loading="lazy" alt="Jesus Saves Neon" src="https://drscdn.500px.org/photo/239363347/m%3D900/v2?user_id=4076748&webp=true&sig=3f688581e335c06799fc002c2f3a4a3e1ff0ff498f660827dd431f4c7ca656ca">
+          <figcaption>Jesus Saves Neon</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <div class="footer-inner glass">
+      <a class="f-brand" href="./index.html"><span class="logo-badge">N8</span> Nate Jacobs</a>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/nate-jacobs" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 112.5 6 2.5 2.5 0 014.98 3.5zM3 8.98h4v12H3zM10 8.98h3.8v1.64h.05a4.17 4.17 0 013.75-2.06c4 0 4.74 2.63 4.74 6.05v6.37h-4v-5.65c0-1.35 0-3.08-1.88-3.08s-2.16 1.47-2.16 2.98v5.75H10z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/preliminate/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/nate.jacobs.77" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Nate Jacobs · NYC</p>
     </div>
+  </footer>
 
-    <!-- !PAGE CONTENT! -->
-    <div class="content" style="max-width:1500px">
-        <div class="opacity">
-            <header class="center margin-bottom">
-                <h1>
-                    <b>PHOTOGRAPHS</b>
-                </h1>
-                <p>
-                    <b>Some photos I took</b>
-                </p>
-            </header>
-        </div>
-        <!-- this div ensures background js always fires to reset color to white when user scrolls to top of page -->
-        <div class="row-padding" data-background-color="white"></div>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" data-open="false">
+    <button class="lb-close" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <img src="" alt="">
+  </div>
 
-        <!-- Photo Grid 1-->
-        <div class="row-padding" data-background-color="white" id="myGrid1" style="margin-bottom:64px">
-            <div class="third">
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Country House</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/236786041/m%3D900/v2?user_id=4076748&webp=true&sig=33adfb8e28b62bd97b0591bd46089c255dd0405c834e870a9426b1c444d49d5e'
-                            alt='Country House by pronate on 500px.com'
-                            href='https://500px.com/photo/236786041/country-house-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Snowfall on 14th street</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/227677001/m%3D900/v2?user_id=4076748&webp=true&sig=7715f0335bb901742654d4d2725be4f57ab232a755559c10371fd4cf248adb79'
-                            alt='snowfall on 14th street by pronate on 500px.com'
-                            href='https://500px.com/photo/227677001/snowfall-on-14th-street-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Cat in bowl</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/238598947/m%3D900/v2?user_id=4076748&webp=true&sig=92bbb3421ddcdb705ebf7a147abacc13a2a271b37192e0c36030a7ec00616048'
-                            alt='Cat in bowl by pronate on 500px.com'
-                            href='https://500px.com/photo/238598947/cat-in-bowl-by-pronate'>
-                    </p>
-                </div>
-            </div>
-            <div class="third">
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Monster Spider (watch out)</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/238598945/m%3D900/v2?user_id=4076748&webp=true&sig=775ae686279ae6d2d789f878c66526293b89ecbbe2ca456b752f2559e3af767c'
-                            alt='Monster Spider (watch out) by pronate on 500px.com'
-                            href='https://500px.com/photo/238598945/monster-spider-watch-out-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Bug</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/238598955/m%3D900/v2?user_id=4076748&webp=true&sig=8c551a27e456ae6ae5cfa6caa024bbbe47adea8d45c5a3f535aca044316c511f'
-                            alt='bug by pronate on 500px.com'
-                            href='https://500px.com/photo/238598955/bug-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Stylish cow</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/238598953/m%3D900/v2?user_id=4076748&webp=true&sig=529e8985eb4e3eae4f08e849b0e959eee2bdc937425c973b2af043e33e0e5f4d'
-                            alt='Stylish cow by pronate on 500px.com'
-                            href='https://500px.com/photo/238598953/stylish-cow-by-pronate'>
-                    </p>
-                </div>
-            </div>
-            <div class="third">
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Cigar Neon</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/238598951/m%3D900/v2?user_id=4076748&webp=true&sig=99b7e3dbe8ca36aadb8a7c96ad3eb99dd4395b310022802cb5e252e5a95ff030'
-                            alt='Cigar Neon by pronate on 500px.com'
-                            href='https://500px.com/photo/238598951/cigar-neon-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Ellis island through the gap</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/238598949/m%3D900/v2?user_id=4076748&webp=true&sig=7d14da3070c1575be3ec7b7235df2e4c46bf357fd110aa9b566a23a99bd44ee0'
-                            alt='ellis island through the gap by pronate on 500px.com'
-                            href='https://500px.com/photo/238598949/ellis-island-through-the-gap-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">The sheep realized i wasn't a sheep</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/238598957/m%3D900/v2?user_id=4076748&webp=true&sig=f36068c3961969de782a7fc0e442f831fc728e09f4d873fccba810108ffd0116'
-                            alt='The sheep realized i wasn&#x27;t a sheep by pronate on 500px.com'
-                            href='https://500px.com/photo/238598957/the-sheep-realized-i-wasn-t-a-sheep-by-pronate'>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="opacity">
-            <header class="center margin-bottom">
-                <h1>
-                    <b>Scroll down for more</b>
-                </h1>
-            </header>
-        </div>
-
-        <!-- Photo Grid 2-->
-        <div class="row-padding" data-background-color="black" id="myGrid2">
-
-            <div>
-                <header class="center">
-                    <h1 class="NEON">
-                        <b class="neon-text" style="margin-bottom:32px">neon</b>
-                    </h1>
-                </header>
-            </div>
-
-            <div class="third">
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Neon burger</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239363807/m%3D900/v2?user_id=4076748&webp=true&sig=b8eb30c7fba49c396ac86a91670bcab429d200f9b428d5f15240684a1b10c1d8'
-                            alt='Neon burger by pronate on 500px.com'
-                            href='https://500px.com/photo/239363807/neon-burger-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Trees</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239363799/m%3D900/v2?user_id=4076748&webp=true&sig=6a734f69e6ef30bc30b1202a0a9bcb34d4f62c5a6a3a47f3afa5ffb9e287065b'
-                            alt='Trees by pronate on 500px.com'
-                            href='https://500px.com/photo/239363799/trees-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Neon fruit</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239363485/m%3D900/v2?user_id=4076748&webp=true&sig=6e540821f46d27951d7d39a0697f150016eaf3e76b65231d9945e7cb79983f43'
-                            alt='Neon fruit by pronate on 500px.com'
-                            href='https://500px.com/photo/239363485/neon-fruit-by-pronate'>
-                    </p>
-                </div>
-            </div>
-            <div class="third">
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Neon pizza</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239363421/m%3D900/v2?user_id=4076748&webp=true&sig=cb23eaad9001423a5da907488ed8e582b5936a0a6af8d42993fc8ba91e5ae3dd'
-                            alt='Neon pizza by pronate on 500px.com'
-                            href='https://500px.com/photo/239363421/neon-pizza-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Neon clock</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239432907/m%3D900/v2?user_id=4076748&webp=true&sig=f95a3e2a8b0f31ab4f2f00af62a0d4a0e6bebfebf55e06d6f8aa63eb3538d632'
-                            alt='Neon clock by pronate on 500px.com'
-                            href='https://500px.com/photo/239432907/neon-clock-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Neon B-Side</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239352951/m%3D900/v2?user_id=4076748&webp=true&sig=c667245a5ec5297862d6994565c7dd2133e538ecafed42300917121db6e143b9'
-                            alt='Neon B-Side by pronate on 500px.com'
-                            href='https://500px.com/photo/239352951/neon-b-side-by-pronate'>
-                    </p>
-                </div>
-            </div>
-            <div class="third">
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Neon</div>
-                    </div>
-
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239363281/m%3D900/v2?user_id=4076748&webp=true&sig=3987a51914a04a26b72b2d89a29a08bc1f6feefc0bedc632599b3cba1e7fe883'
-                            alt='Neon by pronate on 500px.com'href='https://500px.com/photo/239363281/neon-by-pronate' >
-                    </p>
-
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Neon bat</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239432781/m%3D900/v2?user_id=4076748&webp=true&sig=cba824ee5e21e17feb7045dcb2dfb372583e5b3749687e089dee47167e4326af'
-                            alt='Neon bat by pronate on 500px.com'href='https://500px.com/photo/239432781/neon-bat-by-pronate'>
-                    </p>
-                </div>
-                <div class='div-photo'>
-                    <div class="overlay">
-                        <div class="overlay-text">Jesus saves neon</div>
-                    </div>
-                    <p>
-                        <img class='img-photo' src='https://drscdn.500px.org/photo/239363347/m%3D900/v2?user_id=4076748&webp=true&sig=3f688581e335c06799fc002c2f3a4a3e1ff0ff498f660827dd431f4c7ca656ca'
-                            alt='Jesus saves neon by pronate on 500px.com'
-                            href='https://500px.com/photo/239363347/jesus-saves-neon-by-pronate'>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- this div ensures background js always fires to reset color to black when user scrolls to bottom of page -->
-        <div class="row-padding" data-background-color="black"></div>
-
-        <!-- End Page Content -->
-    </div>
-    <!-- Footer -->
-    <div id="footer">
-        <!-- jquery loads header and footer-->
-    </div>
-    <script>
-        jQuery(document).ready(function ($) {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
-
-    <!-- lightbox-->
-
-    <script>
-        jQuery(document).ready(function ($) {
-            $('.img-photo').click(function (e) {
-                var image_href = $(this).attr("src");
-                var image_page = $(this).attr("href");
-
-                //create HTML markup for lightbox window
-                var lightbox =
-                    '<div id="lightbox" class="pixels-photo">' +
-                    '<p>Click to close</p>' +
-                    '<div class="lightbox-content" >' + //insert clicked link's href into img src
-                        '<a href="' + image_page + '" target="_blank">'+
-                    '<img src="' + image_href + '" />' +
-                    '</a>'+
-                    '</div>' +
-                    '</div>';
-
-                //insert lightbox HTML into page
-                $('body').append(lightbox);
-            });
-        });
-    </script>
-
-    <script> 
-        $(document).on("click", "#lightbox", function () {
-            $('#lightbox').remove();
-        });
-    </script>
-
-    <script>
-        var $target = $('.content');
-        $('.row-padding').bind('inview', function (event, visible) {
-            //grab the color, should figure out how to do this by key not array location
-            var color = event.currentTarget.attributes[1].value
-            if (visible) {
-                $target.css('background-color', color);
-            } else {
-            }
-        });
-    </script>
-
+  <script src="./assets/site.js"></script>
 </body>
 
 </html>
