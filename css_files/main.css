@@ -264,6 +264,7 @@ ul { list-style: none; padding: 0; }
   align-items: center;
   gap: 0.5rem;
   align-self: start;
+  justify-self: start;
   padding: 0.35rem 0.85rem;
   border-radius: 999px;
   font-size: var(--step--1);
